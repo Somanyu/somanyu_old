@@ -1,209 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="utf-8">
-    <title>COMING SOON</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My First Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap');        
-        body {
-            background: #00b4ff;
-            color: #333;
-            font: 100% Arial, Sans Serif;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+    </head>
+    <body>
+        <header>
+            <!-- <div class="logo">
+                <img src="" alt="">
+            </div> -->
+            <!-- <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav> -->
+        </header>
+        
 
-        #background-wrap {
-            bottom: 0;
-            left: 0;
-            padding-top: 50px;
-            position: fixed;
-            right: 0;
-            top: 0;
-            z-index: -1;
-        }
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                My first <strong>Website</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A Short Project</p>
+            <img src="portfolio-08.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This is my first ever website which I created from scratch and of course with help from youtube and github.
+                 I always dreamt of building my own website and show it to everyone, 
+                 but for that I had to learn few things about web development and other related terms.</p>
+            <p>I had little knowledge about HTMl, CSS and Javascript. I prepared myself to learn everyday 
+                about web development so I could build my first ever own website. 
+                It took me months to study the basics of web development and its related terminologies.</p>
+            <p>After getting a basic amount of knowledge on web development 
+                I started to see other websites or web portfolios for some websites. 
+                Also went through many youtube tutorials and tutorial websites for some good ideas for my website.</p>
+            <p>After all this I started to build my website from scratch. There were many errors 
+                I encountered but all those got solved with the help of google. 
+                I learnt from my errors too. And finally after more than two weeks I fully created my first web page.</p>
+            <p>There are still more ideas to come in the future which you will see on this website. Hope you liked it :)</p>
 
-        /* Keyframes */
+            <a href="WeatherPage/weather.html" class="btn1">City Weather</a>
 
-        @-webkit-keyframes animateCloud {
-            0% {
-                margin-left: -1000px;
-            }
-            100% {
-                margin-left: 100%;
-            }
-        }
-        @-moz-keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
-}
-
-@keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
-}
-
-/* ANIMATIONS */
-
-.x1 {
-	-webkit-animation: animateCloud 35s linear infinite;
-	-moz-animation: animateCloud 35s linear infinite;
-	animation: animateCloud 35s linear infinite;
-	
-	-webkit-transform: scale(0.65);
-	-moz-transform: scale(0.65);
-	transform: scale(0.65);
-}
-
-.x2 {
-	-webkit-animation: animateCloud 20s linear infinite;
-	-moz-animation: animateCloud 20s linear infinite;
-	animation: animateCloud 20s linear infinite;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-.x3 {
-	-webkit-animation: animateCloud 30s linear infinite;
-	-moz-animation: animateCloud 30s linear infinite;
-	animation: animateCloud 30s linear infinite;
-	
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	transform: scale(0.5);
-}
-
-.x4 {
-	-webkit-animation: animateCloud 18s linear infinite;
-	-moz-animation: animateCloud 18s linear infinite;
-	animation: animateCloud 18s linear infinite;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
-	transform: scale(0.4);
-}
-
-.x5 {
-	-webkit-animation: animateCloud 25s linear infinite;
-	-moz-animation: animateCloud 25s linear infinite;
-	animation: animateCloud 25s linear infinite;
-	
-	-webkit-transform: scale(0.55);
-	-moz-transform: scale(0.55);
-	transform: scale(0.55);
-}
-
-/* OBJECTS */
-
-.cloud {
-	background: #fff;
-	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
-	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
-	
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-	
-	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-
-	height: 120px;
-	position: relative;
-	width: 350px;
-}
-
-.cloud:after, .cloud:before {
-    background: #fff;
-	content: '';
-	position: absolute;
-	z-indeX: -1;
-}
-
-.cloud:after {
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-
-	height: 100px;
-	left: 50px;
-	top: -50px;
-	width: 100px;
-}
-
-.cloud:before {
-	-webkit-border-radius: 200px;
-	-moz-border-radius: 200px;
-	border-radius: 200px;
-
-	width: 180px;
-	height: 180px;
-	right: 50px;
-    top: -90px;
-}
-.text {
-    text-align: center;
-    font-family: 'Work Sans', sans-serif;
-    color: #f1f1f1;
-    font-size: 280px;
-}
-</style>
-
-  <script>
-  window.console = window.console || function(t) {};
-</script>
-
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-
-
-</head>
-<div class="text">
-    <a>Coming Soon</a>
-</div>
-<body translate="no" >
-  <div id="background-wrap">
-    <div class="x1">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x2">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x3">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x4">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x5">
-        <div class="cloud"></div>
-    </div>
-</div>
-    </style>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:somanyu.samal@gmail.com" class="footer__link">somanyu.samal@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/somanyusamal">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://instagram.com/soooo.many/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
 </html>
