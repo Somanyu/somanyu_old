@@ -1,0 +1,284 @@
+/*-----Google Fonts(Oswald, Laro)-----*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #fbd7a3;
+}
+
+/*----------INTRODUCTION----------*/
+
+.greenPlate {
+  margin: 8% 0pt 0% 0pt;
+  background-color: #3f504c;
+  padding: 20pt 0pt 70pt 0pt;
+}
+
+.text1 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 68pt;
+  font-weight: bold;
+  margin-left: 640pt;
+  color: white;
+  transition: 1s ease;
+}
+
+.subtext1 {
+  font-family: "Lora", serif;
+  font-size: 18pt;
+  margin-left: 640pt;
+  margin-top: 17pt;
+  color: white;
+  margin-bottom: -27pt;
+}
+
+.greenPlate img {
+  position: absolute;
+  width: 520pt;
+  height: 591pt;
+  top: 0pt;
+  bottom: 0pt;
+  margin-left: 55pt;
+  transition: 1s ease;
+}
+
+/*----------ABOUT----------*/
+
+.second_sec {
+  margin: 280pt 0pt 109pt 0pt;
+  padding: 100pt 40pt 120pt 40pt;
+  background-color: #3f504c;
+  color: white;
+  margin-left: 0pt;
+  margin-right: 590pt;
+}
+
+.about {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 37pt;
+  font-weight: bold;
+  letter-spacing: 1pt;
+  transition: 1s ease;
+}
+
+.about_text {
+  margin-top: 20pt;
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 16pt;
+}
+
+.second_sec img {
+  position: absolute;
+  width: 780pt;
+  height: 599pt;
+  bottom: -671pt;
+  margin: 0pt 0pt 0pt 319.9pt;
+  padding: 0pt 0pt 0pt 0pt;
+  z-index: -1;
+  transition: 1s ease;
+}
+
+/*----------PACKAGES----------*/
+
+.third_sec {
+  padding: 10pt 10pt 89pt 10pt;
+  background-color: #3f504c;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 49pt;
+  position: relative;
+  text-align: center;
+  bottom: -74pt;
+  padding-top: 50pt;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  text-align: center;
+}
+
+.summer img,
+.winter img,
+.newyear img {
+  width: 260pt;
+  height: 177pt;
+  margin-top: 60pt;
+  transition: 0.2s all ease-in-out;
+}
+
+.middle {
+  position: absolute;
+  font-size: 20pt;
+  opacity: 0;
+  padding: 0pt 0pt 0pt 150pt;
+  top: 265pt;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+}
+
+.summer:hover img,
+.winter:hover img,
+.newyear:hover img {
+  opacity: 0.5;
+}
+
+.summer:hover .middle,
+.winter:hover .middle,
+.newyear:hover .middle {
+  opacity: 2;
+}
+
+.summer_title,
+.winter_title,
+.newyear_title {
+  font-family: "PT Serif", serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 27pt;
+  margin-top: 10pt;
+}
+
+.summer_sub,
+.winter_sub,
+.newyear_sub {
+  font-family: "Lora", serif;
+  font-size: 14pt;
+  font-weight: normal;
+  text-transform: none;
+  margin-top: 5pt;
+  margin-left: 50pt;
+  margin-right: 50pt;
+}
+
+/*----------TESTIMONIALS----------*/
+
+.fourth_sec {
+  margin-top: 100pt;
+  padding: 30pt 0pt 100pt 0pt;
+  background-clip: border-box;
+  color: #3f504c;
+}
+
+.testm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  text-align: center;
+}
+
+.first img,
+.second img,
+.third img {
+  width: 230pt;
+  height: 190pt;
+  margin-bottom: 0pt;
+}
+
+.testim_title {
+  margin-bottom: 50pt;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: #3f504c;
+  font-size: 48pt;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.first_title,
+.second_title,
+.third_title {
+  font-family: "Oswald", sans-serif;
+  font-size: 30pt;
+  margin-top: 9pt;
+}
+
+.first_subtitle,
+.second_subtitle,
+.third_subtitle {
+  font-family: "Lora", serif;
+  text-transform: none;
+  font-size: 15pt;
+  font-weight: normal;
+  margin-top: 10pt;
+}
+
+/*----------CONTACT US----------*/
+#contactus {
+  background-color: #3f504c;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  padding: 24pt 40pt 40pt 40pt;
+}
+
+legend {
+  font-size: 42pt;
+}
+
+label {
+  font-family: "Lora", serif;
+  font-size: 15pt;
+  margin-left: 10pt;
+}
+
+input {
+  margin-left: 10pt;
+  padding: 10pt 100pt 5pt 28pt;
+  margin-bottom: 10pt;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+}
+
+textarea {
+  margin-left: 10pt;
+  font-family: "Lora", serif;
+}
+
+input[type="submit"] {
+  background-color: #fbd7a3;
+  padding: 6pt 86pt 6pt 86pt;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  color: #3f504c;
+  font-size: 18pt;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: flex;
+  margin: 10pt 10pt 10pt 10pt;
+}
+
+input[name="Submit"] {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+input:hover[type="submit"] {
+  opacity: 0.5;
+}
+
+img[alt="balloon"] {
+  position: absolute;
+  width: 490pt;
+  height: 503pt;
+  margin-left: 557pt;
+  margin-top: -91pt;
+}
+
+input[id="message"] {
+  padding: 10pt 120pt 68pt 10pt;
+}
