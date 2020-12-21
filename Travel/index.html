@@ -1,0 +1,162 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-180671752-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-180671752-1");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="travel.css" />
+    <link rel="icon" href="./images/titleLogo.png" />
+    <title>Travel</title>
+  </head>
+
+  <body>
+    <!--INTRODUCTION-->
+    <div class="greenPlate">
+      <img src="./images/Front.png" alt="mountain" />
+      <div class="text1">
+        <strong>kyobi<br />travel<br />agency</strong>
+      </div>
+      <div class="subtext1">Taking you to the best places</div>
+    </div>
+
+    <!--ABOUT-->
+    <div class="second_sec">
+      <img src="./images/Train.png" alt="train" />
+      <div class="about">about our agency</div>
+      <div class="about_text">
+        The kyobi travel agency has been offering the best vacation package
+        since 2006. We gurantee that every trip will be unforgettable and
+        unique. You will experience the most adventorus moment of life with our
+        travel.
+      </div>
+    </div>
+
+    <!--PACKAGES-->
+    <div class="third_sec">
+      <div class="title">our packages</div>
+      <div class="service">
+        <!--SUMMER PACKAGE-->
+        <div class="summer">
+          <img src="./images/Summer.png" alt="summer" />
+          <div class="middle">
+            <div class="text">
+              <a href="http://somanyu.github.io">See plans</a>
+            </div>
+          </div>
+          <div class="summer_title">summer getaway</div>
+          <div class="summer_sub">
+            Visit the country's beautiful beaches and lavish resorts.
+          </div>
+        </div>
+
+        <!--WINTER PACKAGE-->
+        <div class="winter">
+          <img src="./images/Winter.png" alt="winter" />
+          <div class="middle">
+            <div class="text">
+              <a href="http://somanyu.github.io">See plans</a>
+            </div>
+          </div>
+          <div class="winter_title">winter wonder</div>
+          <div class="winter_sub">
+            Spend the holidays in cozy cabins and grandforests.
+          </div>
+        </div>
+
+        <!--NEW YEAR PACKAGE-->
+        <div class="newyear">
+          <img src="./images/NewYear.png" alt="newyear" />
+          <div class="middle">
+            <div class="text">
+              <a href="http://somanyu.github.io">See plans</a>
+            </div>
+          </div>
+          <div class="newyear_title">Brand New Year</div>
+          <div class="newyear_sub">
+            Start the year right by visiting historical sites.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--TESTIMONIALS-->
+    <div class="fourth_sec">
+      <div class="testim_title">Client Testimonials</div>
+      <div class="testm">
+        <!--CUSTOMER 1-->
+        <div class="first">
+          <img src="./images/FirstCustom.png" alt="FirstCustom" />
+          <div class="first_title">Johan Divey</div>
+          <div class="first_subtitle">
+            " This is a first subtitle for the first customer for this website
+            and client. This is a first subtitle for the first customer for this
+            website and client. "
+          </div>
+        </div>
+
+        <!--CUSTOMER 2-->
+        <div class="second">
+          <img src="./images/SecondCustom.png" alt="SecondCustom" />
+          <div class="second_title">Welsey Tick</div>
+          <div class="second_subtitle">
+            " This is a first subtitle for the first customer for this website
+            and client. This is a first subtitle for the first customer for this
+            website and client. "
+          </div>
+        </div>
+
+        <!--CUSTOMER 3-->
+        <div class="third">
+          <img src="./images/ThirdCustom.png" alt="ThirdCustom" />
+          <div class="third_title">Meddick Lora</div>
+          <div class="third_subtitle">
+            " This is a first subtitle for the first customer for this website
+            and client. This is a first subtitle for the first customer for this
+            website and client. "
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--CONTACT FORM-->
+    <form action="https://formspree.io/f/mqkggago" id="contactus" method="post">
+      <fieldset>
+        <legend>Contact Us</legend>
+
+        <img src="./images/ContactForm.png" alt="balloon" />
+
+        <input type="hidden" name="submitted" id="submitted" value="10" />
+
+        <label for="name">Your Full Name*: </label><br />
+        <input type="text" name="name" id="name" maxlength="50" /><br />
+
+        <label for="email">E-Mail Address*:</label><br />
+        <input type="email" name="_replyto" id="email" maxlength="50" /><br />
+
+        <label for="phone">Phone Number:</label><br />
+        <input type="text" name="phone" id="phone" maxlength="15" /><br />
+
+        <label for="message">Message For Us:</label><br />
+        <input type="text" name="message" id="message" maxlength="100" /><br />
+        <!-- <textarea name="message" id="message" cols="50" rows="10"></textarea> -->
+
+        <input type="submit" name="Submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+  <script type="text/javascript" src="./script.js"></script>
+</html>
