@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-180671752-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-180671752-1");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,59 +29,69 @@
   </head>
   <body>
     <main>
-        <div class="navigation">
-            <nav>
-                <h1 id="logo">travello</h1>
+      <div class="navigation">
+        <nav>
+          <h1 id="logo">travello</h1>
 
-                <svg style="display: none">
-                    <symbol id="magnify" viewBox="0 0 18 18" height="100%" width="100%">
-                    <path
-                        d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0          6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5          1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5            11z"
-                        fill="#fff"
-                        fill-rule="evenodd"
-                    />
-                    </symbol>
-                </svg>
+          <svg style="display: none">
+            <symbol id="magnify" viewBox="0 0 18 18" height="100%" width="100%">
+              <path
+                d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0          6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5          1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5            11z"
+                fill="#fff"
+                fill-rule="evenodd"
+              />
+            </symbol>
+          </svg>
 
-                <div class="search-bar">
-                    <input type="text" class="input" placeholder="&nbsp;" />
-                    <span class="label">Enter Destination</span>
-                    <span class="highlight"></span>
-                    <div class="search-btn">
-                    <svg class="icon icon-18">
-                        <use xlink:href="#magnify"></use>
-                    </svg>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                </div>
-            </nav>
-        </div>
-
-        <div class="side-show">
-            <h3 class="first-text">LET'S MAKE THE BEST TIP EVER</h3>
-            <h1 class="maintext">
-                A new <br /><span class="highlight">pulse</span> of <br />dream
-            </h1>
-            <h2 class="third-text">Explore beautifull places</h2>
-        </div>
-
-        <div class="manyButtons">
-            <button class="red">Get the app</button>
-            <button class="normal">Discover</button>
-        </div>
-
-        <div class="right-side">
-            <div class="circle">
-            <div class="vector">  
-                <img height="450" width="750" src="./imgs/image02-removebg-preview.png" class="travel">
-                <img height="350" width="450" src="./imgs/Capture-removebg-preview.png" class="dotted">
+          <div class="search-bar">
+            <input type="text" class="input" placeholder="&nbsp;" />
+            <span class="label">Enter Destination</span>
+            <span class="highlight"></span>
+            <div class="search-btn">
+              <svg class="icon icon-18">
+                <use xlink:href="#magnify"></use>
+              </svg>
             </div>
-            </div>
+          </div>
+
+          <div class="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="side-show">
+        <h3 class="first-text">LET'S MAKE THE BEST TIP EVER</h3>
+        <h1 class="maintext">
+          A new <br /><span class="highlight">pulse</span> of <br />dream
+        </h1>
+        <h2 class="third-text">Explore beautifull places</h2>
+      </div>
+
+      <div class="manyButtons">
+        <button class="red">Get the app</button>
+        <button class="normal">Discover</button>
+      </div>
+
+      <div class="right-side">
+        <div class="circle">
+          <div class="vector">
+            <img
+              height="450"
+              width="750"
+              src="./imgs/image02-removebg-preview.png"
+              class="travel"
+            />
+            <img
+              height="350"
+              width="450"
+              src="./imgs/Capture-removebg-preview.png"
+              class="dotted"
+            />
+          </div>
         </div>
+      </div>
     </main>
   </body>
 </html>
