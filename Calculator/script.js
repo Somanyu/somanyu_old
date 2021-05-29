@@ -3,25 +3,27 @@ const buttons = document.querySelectorAll('button');
 // display
 const display = document.querySelector('.display');
 
-// eventlistener for buttons
-buttons.forEach(function(button) {
-    button.addEventListener('click', calculate);    
-});
+for(item of buttons) {
+    item.addEventListener('click', (calculate)=>{
+        
+        const ButtonValue = calculate.target.value;
+        console.log('Button text is ', ButtonValue);
 
-// caluclate function
-function calculate(event) {
-    const clickedButtonValue = event.target.value;
-
-    if(clickedButtonValue === '=') {
-        // if display is not empty
-        if(display.value !== '') {
-            display.value = eval(display.value);
+        if (ButtonValue === '=') {
+            // if display is not empty
+            if (display.value != '') {
+                // evaluates the numbers and operators
+                display.value = eval(display.value);
+            }
+        } 
+        // clears the display
+        else if (ButtonValue === 'C') {
+            display.value = '';
+        } 
+        else {
+            // concatenate the numbers
+            display.value += ButtonValue;
         }
-    } else if (clickedButtonValue === 'C') {
-        // clears display
-        display.value = '';
-    } else {
-        // concatenate the numbers
-        display.value += clickedButtonValue;
-    }
+        
+    })
 }
